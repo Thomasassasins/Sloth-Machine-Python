@@ -11,7 +11,7 @@ def spin_row():
     return [random.choice(symbols) for _ in range(3)]
 
 
-def payed(row, bet):
+def paid(row, bet):
     if row[0] == row[1] == row[2]:
         if row[0] == "🍒":
             return bet * 2
@@ -59,7 +59,7 @@ def main():
         time.sleep(1)
         space_row(row)
 
-        money = payed(row, bet)
+        money = paid(row, bet)
 
         if money > 0:
             print(Fore.RED + f"You won! ${balance}" + "\033[39m")

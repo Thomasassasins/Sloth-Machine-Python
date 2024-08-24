@@ -33,11 +33,11 @@ def main():
     balance = 100
 
     print("----------------------")
-    print("Welcome to sloth machine")
+    print("Welcome to slot machine")
     print("----------------------")
 
     while True:
-        print(f"Your actual balance is {balance}")
+        print(f"Your actual current is {balance}")
         bet = input("How much money do you want to bet? ")
 
         bet = int(bet)
@@ -49,7 +49,7 @@ def main():
 
         if bet > balance:
             print("")
-            print("You cant put more money than you actually have! ")
+            print("You cant put more money than you currently have! ")
             continue
 
         balance -= bet
